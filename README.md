@@ -1,4 +1,4 @@
-# punch-sitemap-generator
+# Punch Sitemap Generator
 
 Plugin to create the sitemap.xml for your [Punch](http://laktek.github.com/punch) sites.
 
