@@ -1,0 +1,33 @@
+{
+  "name": "punch-sitemap-generator",
+  "title": "Punch Sitemap Generator",
+  "description": "Automatically create sitemap.xml for your Punch site.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/laktek/punch-sitemap-generator",
+  "author": {
+    "name": "Lakshan Perera",
+    "email": "lakshan@web2media.net",
+    "url": "http://laktek.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/laktek/punch-sitemap-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/laktek/punch-sitemap-generator/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/laktek/punch-sitemap-generator/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/sitemap_generator",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "test": "jasmine-node spec"
+  },
+  "keywords": ["punch", "sitemap"]
+}
