@@ -1,7 +1,7 @@
 {
   "name": "punch-sitemap-generator",
   "title": "Punch Sitemap Generator",
-  "description": "Automatically create sitemap.xml for your Punch site.",
+  "description": "Creates the sitemap.xml for your [Punch](http://laktek.github.com/punch) site.",
   "version": "0.0.1",
   "homepage": "https://github.com/laktek/punch-sitemap-generator",
   "author": {

@@ -1,6 +1,6 @@
 # punch-sitemap-generator
 
-Creates the sitemap.xml for your [Punch](http://laktek.github.com/punch) site.
+Plugin to create the sitemap.xml for your [Punch](http://laktek.github.com/punch) site.
 
 ## How to Use 
 
