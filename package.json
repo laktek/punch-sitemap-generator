@@ -23,6 +23,13 @@
     }
   ],
   "main": "lib/sitemap_generator",
+	"dependencies": {
+    "punch": ">= 0.4.0"
+  },
+  "devDependencies": {
+    "jasmine-node": ">= 1.0.26",
+    "jshint": ">= 0.9.1"
+  },
   "engines": {
     "node": ">= 0.6.0"
   },
