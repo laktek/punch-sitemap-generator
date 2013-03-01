@@ -34,6 +34,8 @@ You can set the following options for the `sitemap_generator`:
 
 	- `manual_entries` - List of manual URL entries to include in the sitemap. (eg. `[ { "loc": "http://example.com/custom", "priority": "0.6", "lastmod": "2012-01-01", "changefreq": "yearly" } ]`)
 
+	- `url_extension` - The extension to add to the urls except if alreayd present or if there is a trailing slash (eg. `.html`)
+
 * `sitemap.xml` will be generated along with the rest of the files in your site when you run the command `punch generate` (`punch g`). It will be stored in the `output` directory, ready to be published.
 
 ## License
