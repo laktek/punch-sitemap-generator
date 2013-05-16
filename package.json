@@ -24,7 +24,7 @@
   ],
   "main": "lib/sitemap_generator",
   "dependencies": {
-    "punch": ">= 0.4.0"
+    "punch": ">= 0.5.27"
   },
   "devDependencies": {
     "jasmine-node": ">= 1.0.26",
