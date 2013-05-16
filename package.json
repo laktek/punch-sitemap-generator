@@ -2,7 +2,7 @@
   "name": "punch-sitemap-generator",
   "title": "Punch Sitemap Generator",
   "description": "Plugin to create the sitemap.xml for your Punch sites.",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://github.com/laktek/punch-sitemap-generator",
   "author": {
     "name": "Lakshan Perera",
@@ -24,7 +24,7 @@
   ],
   "main": "lib/sitemap_generator",
   "dependencies": {
-    "punch": ">= 0.4.0"
+    "punch": ">= 0.5.27"
   },
   "devDependencies": {
     "jasmine-node": ">= 1.0.26",
