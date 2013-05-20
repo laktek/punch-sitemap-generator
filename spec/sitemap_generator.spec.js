@@ -83,7 +83,7 @@ describe("adding a url", function() {
 
 		var spyCacheStat = jasmine.createSpy();
 		spyCacheStat.andCallFake(function(path, ext, opts, callback) {
-			callback(null, {"mtime": new Date(2012, 10, 1) });
+			callback(null, {"mtime": new Date(1342800000000) });
 		});
 		sitemap_generator.cacheStore = { "stat": spyCacheStat };
 	 });
@@ -92,21 +92,21 @@ describe("adding a url", function() {
 		var spyCallback = jasmine.createSpy();
 		sitemap_generator.addUrl("/path/page.html", spyCallback);
 
-		expect(sitemap_generator.urls).toEqual([ { "loc": "http://example.com/path/page.html", "priority": 0.8, "lastmod": "2012-10-31T18:30:00.000Z", "changefreq": "weekly" } ]);
+		expect(sitemap_generator.urls).toEqual([ { "loc": "http://example.com/path/page.html", "priority": 0.8, "lastmod": new Date(1342800000000).toISOString(), "changefreq": "weekly" } ]);
 	});
 
 	it("add files without an extenstion (assuming they are endpoints to pages)", function() {
 		var spyCallback = jasmine.createSpy();
 		sitemap_generator.addUrl("/path/page", spyCallback);
 
-		expect(sitemap_generator.urls).toEqual([ { "loc": "http://example.com/path/page", "priority": 0.8, "lastmod": "2012-10-31T18:30:00.000Z", "changefreq": "weekly" } ]);
+		expect(sitemap_generator.urls).toEqual([ { "loc": "http://example.com/path/page", "priority": 0.8, "lastmod": new Date(1342800000000).toISOString(), "changefreq": "weekly" } ]);
 	});
 
 	it("add only the base paths of file names ending with index", function() {
 		var spyCallback = jasmine.createSpy();
 		sitemap_generator.addUrl("/path/page/index", spyCallback);
 
-		expect(sitemap_generator.urls).toEqual([ { "loc": "http://example.com/path/page", "priority": 0.8, "lastmod": "2012-10-31T18:30:00.000Z", "changefreq": "weekly" } ]);
+		expect(sitemap_generator.urls).toEqual([ { "loc": "http://example.com/path/page", "priority": 0.8, "lastmod": new Date(1342800000000).toISOString(), "changefreq": "weekly" } ]);
 	});
 
 	it("skip files with other extensions", function() {
